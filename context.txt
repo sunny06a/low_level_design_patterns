@@ -1,0 +1,27 @@
+SOLID PRINCIPLE
+
+1. Single Responsibilty Principle 
+- A class should have 1 reason to change
+- Create separate class for each changeable property 
+Advatanages 
+- Easy to Understand and maintain
+- Avoid duplicate code
+- Reduce complexity
+- Flexible Software
+
+2. Open Closed Princple 
+- Open for extension but closed for modification 
+- Create a interface rather than adding another method in already tested class
+Advatanages
+
+3. Liskov Substituion Principle
+- If B is sub class of A, than we can replace the object of A with object of B as it
+  shuld contain all properties of A as sub class extends rather than narrowing.
+
+4. Interface Segemented Principle
+- Interface should be such that client should not implement unnecessary function they dont need 
+- Divide each interface such that no unnecessary function needed 
+
+5. Dependency Inversion Principle
+- Class should depend on interface rather than concrete classes
+- constructor injection can be used 
