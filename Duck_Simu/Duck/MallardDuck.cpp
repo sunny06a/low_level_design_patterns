@@ -2,6 +2,8 @@
 #include "../FlyBehaviour/FlyWithWings.cpp"
 #include "../QuackBehaviour/Quack.cpp"
 
+
+// We can also use constructor injection to set the fly and quack behaviour
 class MallardDuck : public Duck {
     public:
     MallardDuck(){
@@ -12,4 +14,4 @@ class MallardDuck : public Duck {
     void Display(){
         std::cout << "I am Mallard";
     }
-};
+}; 
