@@ -26,7 +26,9 @@ class WeatherData : public Subject {
 
     void notifyObservers(){
         for(int i = 0; i < observers.size(); i++){
-            observers[i]->update(temperature, humidity, pressure);
+            observers[i]->update(temperature, humidity, pressure);  // or we can pass a reference to the WeatherData object
+            // observers[i]->update(*this);  // if we want to pass the whole WeatherData object
+            // This allows the observer to access all the data it needs directly
         }
     }
     void measurementsChanged(){

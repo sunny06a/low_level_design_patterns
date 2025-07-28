@@ -16,6 +16,9 @@ class RemoteDisplay : public DisplayElement, public Observer {
     }
 
     void update(float temperature, float humidity, float pressure){
+        //if we want to pass the whole WeatherData object
+        // this->weatherData = weatherData;  // if we want to store the reference to the WeatherData object
+        // This allows the observer to access all the data it needs directly
         this->temperature = temperature;
         this->humidity = humidity;
         this->pressure = pressure;

@@ -8,6 +8,8 @@ class MallardDuck : public Duck {
     public:
     MallardDuck(){
         std::cout << "New Mallard Duck Added" << std::endl;
+        // Setting default behaviors for MallardDuck
+        // This can also be done through constructor injection (flyBehaviour and quackBehaviour can be passed as parameters)
         flyBehaviour = new FlyWithWings();
         quackBehaviour = new Quack();
     }
