@@ -2,4 +2,6 @@
 The iterator Pattern allow traversak of elements of an aggregate without exposing the underlying implementation 
 */
 
-we can also create a menu iterator to iterate different types of menu rather thn repeating code in printmenu() of client/waitress, kind of iterator of iterator (2D)
+- we can also create a menu iterator to iterate different types of menu rather thn repeating code in printmenu() of client/waitress, kind of iterator of iterator (2D)
+- Cohesion : if my object contain only related function then i have high cohesion which also indicates single responsiblity but if i have unrealted function in my object 
+it means low cohesion indicating multiple responsiblity or multiple reason to change thus violate SRP
