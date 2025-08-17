@@ -14,4 +14,10 @@ int main() {
 
     AdaptiveTurkey->fly();
     AdaptiveTurkey->quack();
+
+
+    /// class adapter pattern
+    Duck *AdaptiveTurkey2 = new TurekyAdapterClass2();
+    AdaptiveTurkey2->quack();
+    AdaptiveTurkey2->fly(); 
 }

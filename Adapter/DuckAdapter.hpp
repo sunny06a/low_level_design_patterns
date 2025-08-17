@@ -9,7 +9,7 @@
 
 class TurekyAdapter : public Duck {
     private:
-    Turkey *turkey; // compostion 
+    Turkey *turkey; // compostion //object adapter pattern
     public:
     TurekyAdapter(Turkey *t) : turkey(t) {}
     void quack() override {
@@ -21,4 +21,20 @@ class TurekyAdapter : public Duck {
     virtual ~TurekyAdapter() {
         delete turkey; 
     }
+};
+
+
+//class adapter pattern 
+class TurekyAdapterClass2 : public Duck, public Turkey {
+    public:
+    void quack() override {
+       gobble(); 
+    }
+    void fly() override {
+        std::cout << "Turkey is flying short distances!\n"; 
+    }
+    void gobble() override {
+        std::cout << "Gobble! Gobble!\n"; 
+    }
+    virtual ~TurekyAdapterClass2() = default;  
 };
